@@ -12,26 +12,30 @@ Spree::SocialConfig.configure do |config|
   # config.path_prefix = ''
 
   config.providers = {
-    facebook: {
-      api_key: ENV['FACEBOOK_API_KEY'],
-      api_secret: ENV['FACEBOOK_API_SECRET'],
+    doorkeeper: {
+      api_key: 'd2620989c668946981dd3db4a386f467954f47dabb2fedcc577b2a2381035abd',
+      api_secret: '07c8866b65f9afba97b9ce15d7122f1df2cef6b42987394ad78661818e4fba74'
     },
-    twitter: {
-      api_key: ENV['TWITTER_API_KEY'],
-      api_secret: ENV['TWITTER_API_SECRET'],
-    },
-    github: {
-      api_key: ENV['GITHUB_API_KEY'],
-      api_secret: ENV['GITHUB_API_SECRET'],
-    },
-    google_oauth2: {
-      api_key: ENV['GOOGLE_OAUTH2_API_KEY'],
-      api_secret: ENV['GOOGLE_OAUTH2_API_SECRET'],
-    },
-    amazon: {
-      api_key: ENV['AMAZON_API_KEY'],
-      api_secret: ENV['AMAZON_API_SECRET'],
-    }
+    # facebook: {
+    #   api_key: ENV['FACEBOOK_API_KEY'],
+    #   api_secret: ENV['FACEBOOK_API_SECRET'],
+    # },
+    # twitter: {
+    #   api_key: ENV['TWITTER_API_KEY'],
+    #   api_secret: ENV['TWITTER_API_SECRET'],
+    # },
+    # github: {
+    #   api_key: ENV['GITHUB_API_KEY'],
+    #   api_secret: ENV['GITHUB_API_SECRET'],
+    # },
+    # google_oauth2: {
+    #   api_key: ENV['GOOGLE_OAUTH2_API_KEY'],
+    #   api_secret: ENV['GOOGLE_OAUTH2_API_SECRET'],
+    # },
+    # amazon: {
+    #   api_key: ENV['AMAZON_API_KEY'],
+    #   api_secret: ENV['AMAZON_API_SECRET'],
+    # }
   }
 end
 

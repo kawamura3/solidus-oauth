@@ -53,7 +53,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'dotenv-rails', require: 'dotenv/rails-now' # `omniauth-doorkeeper` gem内から環境変数を参照するためにこのオプションが必要
+
 gem 'solidus', '2.4.2'
 gem 'solidus_auth_devise'
 gem 'deface'
 gem 'solidus_social'
+
+gem 'omniauth-doorkeeper', github: 'dqnch/omniauth-doorkeeper'
